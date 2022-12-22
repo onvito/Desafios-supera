@@ -22,33 +22,45 @@ public class desafio2 {
 	
     public static void main(String[] args) throws IOException {
     	
-        Scanner leitor = new Scanner(System.in);
-        double dinheiroTotal = leitor.nextDouble();
-        int notas = (int) dinheiroTotal;
-        int moedas = (int) ((dinheiroTotal - notas) * 100);
-        int notas100 = notas / 100;
-        notas -= notas100 * 100;
+        Scanner leitor = new Scanner(System.in);			//Utilizando scanner pra leitura de dados
+        double dinheiroTotal = leitor.nextDouble();			//.nextDouble pra ler o float recebido
+        int notas = (int) dinheiroTotal;					//Criando as notas
+        int moedas = (int) ((dinheiroTotal - notas) * 100);	//Criando as moedas
+        
+        int notas100 = notas / 100;							
+        notas -= notas100 * 100;							//Criando as notas de 100
+        
         int notas50 = notas / 50;
-        notas -= notas50 * 50;
+        notas -= notas50 * 50;								//Criando as notas de 50
+        
         int notas20 = notas / 20;
-        notas -= notas20 * 20;
+        notas -= notas20 * 20;								//Criando as notas de 20
+        
         int notas10 = notas / 10;
-        notas -= notas10 * 10;
+        notas -= notas10 * 10;								//Criando as notas de 10
+        
         int notas5 = notas / 5;
-        notas -= notas5 * 5;
+        notas -= notas5 * 5;								//Criando as notas de 5
+        
         int notas2 = notas / 2;
-        notas -= notas2 * 2;
+        notas -= notas2 * 2;								//Criando as notas de 2
+        
         int moedas1 = notas;
-        notas -= moedas1 * 1;
+        notas -= moedas1 * 1;								//Criando as moedas de 1 real
+        
         int moedas50 = moedas / 50;
-        moedas -= moedas50 * 50;
-        int moedas25 = moedas / 25;
-        moedas -= moedas25 * 25;
+        moedas -= moedas50 * 50;							//Criando as moedas de 50 centavos
+        
+        int moedas25 = moedas / 25;	
+        moedas -= moedas25 * 25;							//Criando as moedas de 25 centavos
+        
         int moedas10 = moedas / 10;
-        moedas -= moedas10 * 10;
+        moedas -= moedas10 * 10;							//Criando as moedas de 10 centavos
+        
         int moedas05 = moedas / 5;
-        moedas -= moedas05 * 5;
-        int moedas01 = moedas;
+        moedas -= moedas05 * 5;								//Criando as moedas de 5 centavos
+        
+        int moedas01 = moedas;								//Criando as moedas de 1 centavo
         
         System.out.println("NOTAS:");
         System.out.println(notas100 + " nota(s) de R$ 100.00");
@@ -63,7 +75,7 @@ public class desafio2 {
         System.out.println(moedas25 + " moeda(s) de R$ 0.25");
         System.out.println(moedas10 + " moeda(s) de R$ 0.10");
         System.out.println(moedas05 + " moeda(s) de R$ 0.05");
-        System.out.println(moedas01 + " moeda(s) de R$ 0.01");
+        System.out.println(moedas01 + " moeda(s) de R$ 0.01"); //Printando as notas de acordo com o float recebido
     }
 	
 }
