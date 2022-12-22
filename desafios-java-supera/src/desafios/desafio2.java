@@ -1,7 +1,7 @@
-package desafio2;
+package desafios;
 
 /*
- QUESTÃO 2
+ DESAFIO 2
  Leia um valor de ponto flutuante com duas casas decimais. Este valor 
  representa um valor monetário. A seguir, calcule o menor número de notas 
  e moedas possíveis no qual o valor pode ser decomposto. As notas 
@@ -22,10 +22,10 @@ public class desafio2 {
 	
     public static void main(String[] args) throws IOException {
     	
-        Scanner leitor = new Scanner(System.in);			//Utilizando scanner pra leitura de dados
-        double dinheiroTotal = leitor.nextDouble();			//.nextDouble pra ler o float recebido
-        int notas = (int) dinheiroTotal;					//Criando as notas
-        int moedas = (int) ((dinheiroTotal - notas) * 100);	//Criando as moedas
+        Scanner caixa = new Scanner(System.in);			//Utilizando scanner pra leitura de dados
+        double dinheiroRecebido = caixa.nextDouble();			//.nextDouble pra ler o float recebido
+        int notas = (int) dinheiroRecebido;					//Criando as notas
+        int moedas = (int) ((dinheiroRecebido - notas) * 100);	//Criando as moedas
         
         int notas100 = notas / 100;							
         notas -= notas100 * 100;							//Criando as notas de 100

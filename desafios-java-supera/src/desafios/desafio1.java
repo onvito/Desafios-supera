@@ -1,6 +1,7 @@
-package desafio1;
+package desafios;
 
-/*QUESTAO1
+/*
+DESAFIO 1
 Considerando a entrada de valores inteiros não negativos, ordene estes valores segundo
 o seguinte critério:
 • Primeiro os Pares
