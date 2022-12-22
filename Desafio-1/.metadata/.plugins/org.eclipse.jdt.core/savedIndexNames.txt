@@ -1,3 +1,0 @@
-INDEX VERSION 1.131+/home/marcelo/Documentos/Desafios Supera/Desafio-1/.metadata/.plugins/org.eclipse.jdt.core
-646308851.index
-1865797976.index
