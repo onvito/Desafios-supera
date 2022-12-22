@@ -1,11 +1,13 @@
-//Considerando a entrada de valores inteiros não negativos, ordene estes valores segundo
-//o seguinte critério:
-//• Primeiro os Pares
-//• Depois os Ímpares
-//Sendo que deverão ser apresentados os pares em ordem crescente e depois os ímpares
-//em ordem decrescente.
-
 package desafio1;
+
+/*QUESTAO1
+Considerando a entrada de valores inteiros não negativos, ordene estes valores segundo
+o seguinte critério:
+• Primeiro os Pares
+• Depois os Ímpares
+Sendo que deverão ser apresentados os pares em ordem crescente e depois os ímpares
+em ordem decrescente.
+*/
 
 import java.io.BufferedReader;
 import java.io.IOException;
